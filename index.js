@@ -1,3 +1,5 @@
+#!
+
 import inquirer from "inquirer";
 let todo_list = [];
 let while_condition = true;
@@ -6,7 +8,7 @@ while (while_condition === true) {
             name: "operator",
             type: "list",
             message: "select your option",
-            choices: ["Add", "remove", "View", "Delete"]
+            choices: ["Add", "remove", "View",]
         }]);
     if (option.operator === "Add") {
         let answer = await inquirer.prompt([{
